@@ -21,3 +21,22 @@ break;
 default:
     alert('None is true');
 }
+let anim = prompt('What about animation?')
+
+anim = anim.toLowerCase();
+switch(anim){
+case 'yes':
+case 'y':
+     //console.log('You are right!');
+    alert('You are totally right!');
+    break;
+
+case'no':
+case'n':
+alert('Nope! I do actually');
+break;
+
+default:
+    alert('None is true');
+}
+
