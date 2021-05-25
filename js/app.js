@@ -1,6 +1,6 @@
 'use strict';
 
-let userName = prompt('What is your name?')
+ let userName = prompt('What is your name?')
 alert('Welcome' + userName)
 
 let docu = prompt('Do you think I like watching documentaries ?')
@@ -97,3 +97,35 @@ default:
     alert('None is true');
 }
 
+
+let guessNum = prompt('Guess What is My Luky Number?');
+
+while(Number(guessNum) !== 2){
+    guessNum = prompt('Incorrect!')
+}
+
+
+
+let guessNum = 6;
+let correctAns = 2;
+let check = true 
+
+while(guessNum !=0){
+    guessNum --;
+ let guessAgain = prompt('guess again!');
+
+ for (let x=0 ; x < 4 ; x++)
+ nconsole.log(correctAns[x]);
+
+ if( guessAgain == correctAns[x]){
+     alert("Well Done!")
+
+    guessNum = 0;
+    check = false
+    break;
+ }
+if (check){
+    alert('Wrong! Try again')
+    break;
+}
+}
