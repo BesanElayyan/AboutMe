@@ -78,5 +78,22 @@ default:
     alert('None is true');
 }
 
+let horrMovie = prompt('This is the last one..Do you think I like horror movies?')
 
+horrMovie = horrMovie.toLowerCase();
+switch(horrMovie){
+case 'yes':
+case 'y':
+     //console.log('You are right!');
+    alert(userName + 'You are so right! now we can be friends B-)');
+    break;
+
+case'no':
+case'n':
+alert('Sorry! you are wrong' + userName );
+break;
+
+default:
+    alert('None is true');
+}
 
