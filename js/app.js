@@ -59,4 +59,24 @@ default:
     alert('None is true');
 }
 
+let ser = prompt('How about series? Do you think I like wathcing them?')
+
+ser = ser.toLowerCase();
+switch(ser){
+case 'yes':
+case 'y':
+     //console.log('You are right!');
+    alert('Sure thing!');
+    break;
+
+case'no':
+case'n':
+alert('Incorrect!');
+break;
+
+default:
+    alert('None is true');
+}
+
+
 
