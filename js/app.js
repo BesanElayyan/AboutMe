@@ -40,3 +40,23 @@ default:
     alert('None is true');
 }
 
+let comd = prompt('This one is easy. Do you think I like Comedy movies?')
+
+comd = comd.toLowerCase();
+switch(comd){
+case 'yes':
+case 'y':
+     //console.log('You are right!');
+    alert('Sure! Who doesnt?!');
+    break;
+
+case'no':
+case'n':
+alert('I think guessing is not your thing.. =P');
+break;
+
+default:
+    alert('None is true');
+}
+
+
