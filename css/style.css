@@ -1,0 +1,21 @@
+footer{
+    background-color: grey;
+    text-align: right;
+
+}
+ 
+body p{
+margin-top: 200px ;
+text-decoration: wavy;
+font-size: 24px;
+
+}
+
+h1{
+    text-align: center;
+    background-color: darkred;
+    font-size: 55px;
+    margin-top: 150px;
+}
+
+
