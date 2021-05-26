@@ -97,7 +97,7 @@ default:
     alert('None is true');
 }
 
-
+/*
 let guessNum = prompt('Guess What is My Luky Number?');
 
 while(Number(guessNum) !== 2){
@@ -129,3 +129,6 @@ if (check){
     break;
 }
 }
+*/
+
+
