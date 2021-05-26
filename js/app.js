@@ -1,8 +1,13 @@
 'use strict';
+// q1
 
- let userName = prompt('What is your name?')
-alert('Welcome' + userName)
+let userName = prompt('What is your name?')
+function userName1(){
+ alert('Welcome ' + userName)
+}
 
+// q2
+function docu(){
 let docu = prompt('Do you think I like watching documentaries ?')
 
 docu = docu.toLowerCase();
@@ -21,6 +26,10 @@ break;
 default:
     alert('None is true');
 }
+}
+
+// q3
+function anim(){
 let anim = prompt('What about animation?')
 
 anim = anim.toLowerCase();
@@ -39,7 +48,10 @@ break;
 default:
     alert('None is true');
 }
+}
 
+// q4
+function comd(){
 let comd = prompt('This one is easy. Do you think I like Comedy movies?')
 
 comd = comd.toLowerCase();
@@ -58,7 +70,10 @@ break;
 default:
     alert('None is true');
 }
+}
 
+// q 5
+function ser(){
 let ser = prompt('How about series? Do you think I like wathcing them?')
 
 ser = ser.toLowerCase();
@@ -77,7 +92,10 @@ break;
 default:
     alert('None is true');
 }
+}
 
+//q6
+function horrMovie(){ 
 let horrMovie = prompt('This is the last one..Do you think I like horror movies?')
 
 horrMovie = horrMovie.toLowerCase();
@@ -96,39 +114,48 @@ break;
 default:
     alert('None is true');
 }
-
-/*
-let guessNum = prompt('Guess What is My Luky Number?');
-
-while(Number(guessNum) !== 2){
-    guessNum = prompt('Incorrect!')
 }
 
 
-
-let guessNum = 6;
-let correctAns = 2;
-let check = true 
-
-while(guessNum !=0){
-    guessNum --;
- let guessAgain = prompt('guess again!');
-
- for (let x=0 ; x < 4 ; x++)
- nconsole.log(correctAns[x]);
-
- if( guessAgain == correctAns[x]){
-     alert("Well Done!")
-
-    guessNum = 0;
-    check = false
-    break;
- }
-if (check){
-    alert('Wrong! Try again')
-    break;
+function multFunction(){
+    userName1();
+    docu();
+    anim();
+    ser();
+    comd();
+    horrMovie();
 }
-}
-*/
+
+multFunction();
+
+// let guessNum = prompt('Guess What is My Luky Number?');
+
+// while(Number(guessNum) !== 2){
+//     guessNum = prompt('Incorrect!')
+// }
 
 
+
+// let guessNum = 6;
+// let correctAns = 2;
+// let check = true 
+
+// while(guessNum !=0){
+//     guessNum --;
+//  let guessAgain = prompt('guess again!');
+
+//  for (let x=0 ; x < 4 ; x++)
+//  nconsole.log(correctAns[x]);
+
+//  if( guessAgain == correctAns[x]){
+//      alert("Well Done!")
+
+//     guessNum = 0;
+//     check = false
+//     break;
+//  }
+// if (check){
+//     alert('Wrong! Try again')
+//     break;
+// }
+// }
