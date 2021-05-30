@@ -1,6 +1,6 @@
 'use strict';
 // q1
-
+let score = 0;
 let userName = prompt('What is your name?')
 function userName1(){
  alert('Welcome ' + userName)
@@ -117,6 +117,44 @@ default:
 }
 
 
+function guessNum(){
+
+for(let i = 0 ; i <= 3 ; i++){
+let guessNum = prompt('Guess What is My Luky Number?');
+guessNum = Number(guessNum);
+      
+    if(guessNum === 22){
+    score++;
+    alert('You are Right!');
+    break;
+    }else if( guessNum < 22){
+    alert ('Too low!');
+    }else if ( guessNum > 22){
+    alert('Too high!');
+    }
+    if ( i ===3){
+        alert('Sorry! you lost')
+    }
+}
+}
+
+function favCities(){
+let favCities= ['Istanbul', 'Eskisehir','Amasra','Ilgaz'];
+outerloop : for (let i = 0 ; i < 6; i++){
+let userAnswer = prompt('Can you guess one of my favorite Turkish cities?');
+ for(let j = 0; j < favCities.length ; j++) {
+      if (userAnswer === favCities[j]){
+          alert('Correct!');
+          score++;
+          break outerloop;
+        }
+    }
+    if( i === 5){
+        alert('Sorry! you lost. My Fav Turkish cities are:  ' + favCities);
+    }
+}
+}
+
 function multFunction(){
     userName1();
     docu();
@@ -124,38 +162,7 @@ function multFunction(){
     ser();
     comd();
     horrMovie();
+    guessNum();
+    favCities();
 }
-
 multFunction();
-
-// let guessNum = prompt('Guess What is My Luky Number?');
-
-// while(Number(guessNum) !== 2){
-//     guessNum = prompt('Incorrect!')
-// }
-
-
-
-// let guessNum = 6;
-// let correctAns = 2;
-// let check = true 
-
-// while(guessNum !=0){
-//     guessNum --;
-//  let guessAgain = prompt('guess again!');
-
-//  for (let x=0 ; x < 4 ; x++)
-//  nconsole.log(correctAns[x]);
-
-//  if( guessAgain == correctAns[x]){
-//      alert("Well Done!")
-
-//     guessNum = 0;
-//     check = false
-//     break;
-//  }
-// if (check){
-//     alert('Wrong! Try again')
-//     break;
-// }
-// }
